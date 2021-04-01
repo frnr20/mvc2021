@@ -19,7 +19,7 @@ namespace Frnr20\Dice;
 class Dice
 {
     const FACES = 6;
-    private $roll = null;
+    private ?int $roll = null;
 
     public function roll(): int
     {
