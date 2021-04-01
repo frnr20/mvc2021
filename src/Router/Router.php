@@ -56,6 +56,14 @@ class Router
             $body = renderView("layout/page.php", $data);
             sendResponse($body);
             return;
+        } else if ($method === "GET" && $path === "/game") {
+            $data = [
+                "header" => "This is a Game",
+                "message" => "Hey you gamer!",
+            ];
+            $body = renderView("layout/game.php", $data);
+            sendResponse($body);
+            return;
         }
 
         $data = [
