@@ -63,7 +63,7 @@ class Router
             // ];
             // $body = renderView("layout/game.php", $data);
             // sendResponse($body);
-            
+
             $callable = new \Frnr20\Dice\Game();
             $callable->PlayGame();
 
