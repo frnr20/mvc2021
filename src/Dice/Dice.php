@@ -24,7 +24,7 @@ class Dice
     public function roll(): int
     {
         $this->roll = rand(1, self::FACES);
-        
+
         return $this->roll;
     }
 

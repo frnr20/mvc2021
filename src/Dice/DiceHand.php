@@ -31,7 +31,7 @@ class DiceHand
     public function roll(): void
     {
         $len = count($this->dices);
-        
+
         $this->sum = 0;
         for ($i = 0; $i <= 3; $i++) {
             $this->sum += $this->dices[$i]->roll();
@@ -40,7 +40,7 @@ class DiceHand
 
     public function getLastRoll(): string
     {
-        $res = ""; 
+        $res = "";
         for ($i = 0; $i <= 3; $i++) {
             $res .= $this->dices[$i]->getLastRoll() . ", ";
         }
